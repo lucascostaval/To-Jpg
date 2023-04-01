@@ -4,7 +4,7 @@ from PIL import Image
 class Main:
 
     def main(self):
-        lst = os.listdir('images')
+        lst = os.listdir('input')
         for i in range(len(lst)):
             im = Image.open("input/"+lst[i])
             rbg_im = im.convert("RGB")
